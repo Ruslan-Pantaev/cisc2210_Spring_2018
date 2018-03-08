@@ -1,0 +1,200 @@
+   
+\documentclass[11pt]{article}
+\renewcommand{\baselinestretch}{1.05}
+\usepackage{amssymb,amsmath,amsfonts,multirow}
+\topmargin0.0cm
+\headheight0.0cm
+\headsep0.0cm
+\oddsidemargin0.0cm
+\textheight23.0cm
+\textwidth16.5cm
+\footskip1.0cm
+
+ \begin{document}
+
+\title{CISC 2210 Discrete Structures - Noson S. Yanofsky}
+\author{Student: Ruslan Pantaev}
+\maketitle
+
+% ref <https://reu.dimacs.rutgers.edu/Symbols.pdf>
+
+\section*{1.6}
+%
+%
+\subsection*{1.}
+Calculate
+
+\subsection*{(a)}
+$$\frac{7!}{5!} = \frac{7 * 6 * 5!}{5!} = 7 * 6 = 42$$
+
+\subsection*{(e)}
+$$\sum_{k=0}^{5} k! = 5! + 4! + 3! + 2! + 1! + 0! = 120 + 24 + 6 + 2 + 1 + 1 = 154$$
+
+\subsection*{(f)}
+$$\prod_{j=3}^{6} j = 3*4*5*6 = \frac{6!}{2!} = 360$$
+%
+%
+\subsection*{3.}
+Calculate
+
+\subsection*{(a)}
+$$\sum_{k=1}^{n} 3^{k} \text{ for } n = 1,2,3, \text{ and } 4$$
+\begin{center}
+for n = 1: 3\\
+for n = 2: 3 + 9 = 12\\
+for n = 3: 3 + 9 + 27 = 39\\
+for n = 4: 3 + 9 + 27 + 81 = 120\\
+\end{center}
+
+\subsection*{(b)}
+$$\sum_{k=3}^{n} k^{3} \text{ for } n = 3,4 \text{ and } 5$$
+\begin{center}
+for n = 3: 27\\
+for n = 4: 27 + 91 = 118\\
+for n = 5: 27 + 64 + 125 = 216\\
+\end{center} 
+%
+%
+\subsection*{4.}
+Calculate
+
+\subsection*{(a)}
+$$\sum_{i=1}^{10} (-1)^{i} = -1 + 1 + -1 + 1 + -1 + 1 + -1 + 1 + -1 + 1 = 0$$
+
+\subsection*{(b)}
+$$\sum_{k=0}^{3} (k^{2} + 1) = 1 + 2 + 5 + 10 = 18$$
+
+\subsection*{(c)}
+$$\left( \sum_{k=0}^{3} k^{2} \right) + 1 = (0 + 1 + 4 + 9  ) + 1 = 15$$
+%
+%
+\subsection*{7.}
+\begin{center}
+Consider the sequence given by $a_{n} = \frac{n-1}{n+1} \text{ for } n \in \mathbb{P}$
+\end{center}
+
+\subsection*{(a)}
+\begin{center}
+List the first six terms of this seq:\\
+\hfill \break
+$\frac{1-1}{1+1} = 0, \frac{2-1}{2+1} = \frac{1}{3}, \frac{3-1}{3+1} = \frac{1}{2}, \frac{4-1}{4+1} = \frac{3}{5}, \frac{5-1}{5+1} = \frac{2}{3}, \frac{6-1}{6+1} = \frac{5}{7}$
+\end{center}
+
+\subsection*{(b)}
+\begin{center}
+Claculate $a_{n+1}-a_{n} \text{ for } n = 1, 2, 3$\\
+\hfill \break
+for n = 1: $\frac{1}{3}$\\
+for n = 2: $\frac{3}{6}-\frac{2}{6} = \frac{1}{6}$\\
+for n = 3: $\frac{6}{10}-\frac{5}{10} = \frac{1}{10}$\\
+\end{center}
+
+\subsection*{(c)}
+\begin{center}
+Show that $a_{n+1}-a_{n}  = \frac{2}{(n+1)(n+2} \text{ for } n \in \mathbb{P}$\\
+\hfill \break
+$\frac{(n+1)-1}{(n+1)+1} - \frac{n-1}{n+1}$\\
+$=\frac{n}{n+2} - \frac{n-1}{n+1}$\\
+$=\frac{n(n+1)}{(n+1)(n+2)} - \frac{(n-1)(n+2)}{(n+1)(n+2)}$\\
+$=\frac{n^{2}-n^{2}+2n-2n+2}{(n+1)(n+2)}$\\
+$=\frac{2}{(n+1)(n+2)}$\\
+\end{center}
+%
+%
+\subsection*{8.}
+\begin{center}
+Consider the sequence given by $b_{n} = \frac{1}{2} [1 + (-1)^{n}] \text{ for } n \in \mathbb{N}$
+\end{center}
+
+\subsection*{(a)}
+\begin{center}
+List the first seven terms of this seq:\\
+\hfill \break
+$\frac{1}{2} [1 + (-1)^{0}] = \frac{1}{2} (2) = 1$\\
+$\frac{1}{2} [1 + (-1)^{1}] = \frac{1}{2} (0) = 0$\\
+$\frac{1}{2} [1 + (-1)^{2}] = \frac{1}{2} (2) = 1$\\
+$\frac{1}{2} [1 + (-1)^{3}] = \frac{1}{2} (0) = 0$\\
+$\frac{1}{2} [1 + (-1)^{4}] = \frac{1}{2} (2) = 1$\\
+$\frac{1}{2} [1 + (-1)^{5}] = \frac{1}{2} (0) = 0$\\
+$\frac{1}{2} [1 + (-1)^{6}] = \frac{1}{2} (2) = 1$\\
+\end{center}
+
+\subsection*{(b)}
+\begin{center}
+What is its set of values?\\
+\hfill \break
+\{1, 0\}
+\end{center}
+%
+%
+\subsection*{10.}
+\begin{center}
+For n = 1,2,3,..., let SSQ(n) = $\sum_{i=1}^{n} i^{2}$\\
+(where SSQ = "sum of squares")
+\end{center}
+
+\subsection*{(a)}
+\begin{center}
+Calculate SSQ(n) for 1,2,3, and 5\\
+\hfill \break
+for n = 1: 1\\
+for n = 2: 1 + 4 = 5\\
+for n = 3: 1 + 4 + 9 = 14\\
+for n = 5: 1 + 4 + 9 + 16 + 25 = 55\\
+\end{center}
+
+\subsection*{(b)}
+\begin{center}
+Observe that SSQ(n + 1) = SSQ(n)+$(n+1)^{2}$ for $n \geq 1$\\
+\hfill \break
+SSQ(2) = 5\\
+SSQ(2+1) = 5 + $(2+1)^{2}$\\
+= 5 + 9 = 14\\
+(Here we're simply adding an n+1 operation outside of $\sum$)
+\end{center}
+
+\subsection*{(c)}
+\begin{center}
+It turns out that SSQ(73) = 132,349. Use this to calculate SSQ(74) and SSQ(72)\\
+\hfill \break
+SSQ(74) = SSQ(73) + $(73+1)^{2}$ = 132,349 + 5,476 = 137,825\\
+SSQ(72) = SSQ(73) - $(72+1)^{2}$ = 132,349 - 5,329 = 127,020
+\end{center}
+%
+%
+\subsection*{13. (a)}
+\begin{center}
+Using a calculator or other device, complete the table [write E if the calculation is beyond the capability of your computing device]\\
+\hfill \break
+\begin{tabular}{ |c|c|c|c|c|c|} 
+\hline
+n & $n^{4}$ & $4^{n}$ & $n^{20}$ & $20^{n}$ & n! \\
+\hline
+\multirow{1}{0em}
+5	& $6.25 * 10^{2}$	& $1.02 * 10^{3}$	& $9.54 * 10^{13}$	& $3.2 * 10^{6}$	& $1.2 * 10^{2}$ \\
+10	& $1*10^{4}$		& $1.05 * 10^{6}$	& $1 * 10^{20}$		& $1.02 * 10^{13}$	& $3.63 * 10^{6}$ \\
+25	& $3.91 * 10^{5}$	& $1.13 * 10^{15}$	& $9.09 * 10^{27}$	& $3.36 * 10^{32}$	& $1.55 * 10^{25}$ \\
+50	& $6.25 * 10^{6}$	& $1.27 * 10^{30}$	& $9.54 * 10^{33}$	& $1.13 * 10^{65}$	& $3.04 * 10^{64}$ \\
+\hline
+\end{tabular}
+\end{center}
+%
+%
+\subsection*{14.}
+\begin{center}
+Repeat Exercise 13 for the table in Figure 4\\
+\hfill \break
+\begin{tabular}{ |c|c|c|c|c|} 
+\hline
+n & $\log_{10}n$ & $\sqrt{n}$ & $20 * \sqrt[4]{n}$ & $\sqrt[4]{n} * \log_{10}n$ \\
+\hline
+\multirow{1}{1em}
+{50}		& $1.70$	& $7.07$	& $53.18$		& $4.52$ \\
+100		& $2$	& $10$	& $63.25$		& $6.32$ \\
+$10^{4}$	& $4$	& $100$	& $200$		& $40$ \\
+$10^{6}$	& $6$	& $1000$	& $632.46$	& $189.74$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{document}
