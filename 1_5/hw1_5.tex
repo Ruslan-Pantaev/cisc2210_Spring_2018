@@ -1,0 +1,308 @@
+   
+\documentclass[11pt]{article}
+\renewcommand{\baselinestretch}{1.05}
+\usepackage{amssymb, amsmath, amsfonts, multirow, tikz}
+\usetikzlibrary{datavisualization}
+\topmargin0.0cm
+\headheight0.0cm
+\headsep0.0cm
+\oddsidemargin0.0cm
+\textheight23.0cm
+\textwidth16.5cm
+\footskip1.0cm
+
+ \begin{document}
+
+\title{CISC 2210 Discrete Structures - Noson S. Yanofsky}
+\author{Student: Ruslan Pantaev}
+\maketitle
+
+% ref <https://reu.dimacs.rutgers.edu/Symbols.pdf>
+
+\section*{1.5}
+%
+%
+\subsection*{1.}
+\begin{center}
+Let $f(n) = n^{2} + 3$ and $g(n) = 5n - 11$ for $n \in \mathbb{N}$\\
+Thus $f: \mathbb{N} \rightarrow \mathbb{N}$ and $g: \mathbb{N} \rightarrow \mathbb{Z}$ Calculate:
+\end{center}
+
+\subsection*{(a)}
+\begin{center}
+$f(1)$ and $g(1)$\\
+$f(1) = 1^{2} + 3 = 4$\\
+$g(1) = 5(1) - 11 = -6$\\
+\end{center}
+
+\subsection*{(b)}
+\begin{center}
+$f(2)$ and $g(2)$\\
+$f(2) = 2^{2} + 3 = 7$\\
+$g(2) = 5(2) - 11 = -1$\\
+\end{center}
+
+\subsection*{(c)}
+\begin{center}
+$f(3)$ and $g(3)$\\
+$f(3) = 3^{2} + 3 = 12$\\
+$g(3) = 5(3) - 11 = 4$\\
+\end{center}
+
+\subsection*{(d)}
+\begin{center}
+$f(4)$ and $g(4)$\\
+$f(4) = 4^{2} + 3 = 19$\\
+$g(4) = 5(4) - 11 = 9$\\
+\end{center}
+
+\subsection*{(e)}
+\begin{center}
+$f(5)$ and $g(5)$\\
+$f(5) = 5^{2} + 3 = 28$\\
+$g(5) = 5(5) - 11 = 14$\\
+\end{center}
+
+\subsection*{(f)}
+\begin{center}
+To think about: Is $f(n) + g(n)$ always an even number?\\
+\hfill \break
+let's test base case of n = 0 to be sure:\\
+$f(0)$ and $g(0)$\\
+$f(0) = 0^{2} + 3 = 3$\\
+$g(0) = 5(0) - 11 = -11$\\
+\hfill \break
+$f(n)$ and $g(n)$ both produce either an even or odd integer within the $\mathbb{Z}$ domain.\\
+\hfill \break
+for $n = \{n: n \in \mathbb{N}$ and $n \bmod 2 = 0\}$\\
+let $z_{1}$ and $z_{2}$ be outputs of $f(n)$ and $g(n)$ respectively,\\
+where $z = \{z: z \in \mathbb{Z}$ and $z \bmod 2 = 0\}$\\
+thus, $(z_{1} + z_{2}) \bmod 2 = 0$\\
+\hfill \break
+for $n+1 = \{n: n \in \mathbb{N}$ and $n \bmod 2 = 1\}$\\
+let $z_{1}+1$ and $z_{2}+1$ be outputs of $f(n)$ and $g(n)$ respectively,\\
+where $z = \{z: z \in \mathbb{Z}$ and $z \bmod 2 = 0\}$\\
+thus, $((z_{1} + 1) + (z_{2} + 1)) \bmod 2 = (z_{1} + z_{2} + 2) \bmod 2 = 0$\\
+\hfill \break
+Yes, $f(n) + g(n)$ consistently produces an even integer within the $\mathbb{Z}$ domain.\\
+\end{center}
+%
+%
+\subsection*{2.}
+\begin{center}
+Consider the function $h: \mathbb{P} \rightarrow  \mathbb{P}$ defined by $h(n) = |\{k \in \mathbb{N} : k|n\}|$\\
+for $n \in \mathbb{P}$. In words, $h(n)$ is the number of divisors of $n$.\\
+Calculate $h(n)$ for $1 \leq n \leq 10$ and for $n = 73$.\\
+\hfill \break
+h(1) =	1\\
+h(2) =	|1,2| = 2\\
+h(3) =	|1,3| = 2\\
+h(4) =	|1,2,4| = 3\\
+h(5) =	|1,5| = 2\\
+h(6) =	|1,2,3,6| = 4\\
+h(7) =	|1,7| = 2\\
+h(8) =	|1,2,4,8| = 4\\
+h(9) =	|1,3,9| = 3\\
+h(10) =	|1,2,5,10| = 4\\
+h(73) =	|1,73| = 2\\
+\end{center}
+%
+%
+\hfill \break
+\hfill \break
+\hfill \break
+\subsection*{3.}
+\begin{center}
+Let $\sum$* be the language using letters from $\sum = \{a,b\}$.\\
+We've already seen a useful function from $\sum$* to $\mathbb{N}$.\\
+It is the length function, which already has a name: length. Calculate:\\
+\end{center}
+
+\subsection*{(a)}
+\begin{center}
+length($bab$) = 3
+\end{center}
+
+\subsection*{(b)}
+\begin{center}
+length($aaaaaaaa$) = 8
+\end{center}
+
+\subsection*{(c)}
+\begin{center}
+length($\lambda$) = 0
+\end{center}
+
+\subsection*{(d)}
+\begin{center}
+What is the image set Im(length) for this function?\\
+\hfill \break
+$\mathbb{N}$
+\end{center}
+%
+%
+\subsection*{5.}
+\begin{center}
+Let $f$ be the function in example 3:\\
+$f(m,n) = \lfloor\frac{n}{2}\rfloor - \lfloor\frac{m-1}{2}\rfloor$
+\end{center}
+
+\subsection*{(a)}
+\begin{center}
+Calculate $f(0,0), f(8,8), f(-8,-8), f(73,73),$ and $f(-73,-73)$\\
+\hfill \break
+$f(0,0) = \lfloor\frac{0}{2}\rfloor - \lfloor\frac{0-1}{2}\rfloor = 0 - (-1) = 1$\\
+$f(8,8) = \lfloor\frac{8}{2}\rfloor - \lfloor\frac{8-1}{2}\rfloor = 4 - 3 = 1$\\
+$f(-8,-8) = \lfloor\frac{-8}{2}\rfloor - \lfloor\frac{-8-1}{2}\rfloor = -4 - (-5) = 1$\\
+$f(73,73) = \lfloor\frac{73}{2}\rfloor - \lfloor\frac{73-1}{2}\rfloor = 36 - 36 = 0$\\
+$f(-73,-73) = \lfloor\frac{-73}{2}\rfloor - \lfloor\frac{-73-1}{2}\rfloor = -36 - (-36) = 0$\\
+\end{center}
+
+\subsection*{(b)}
+\begin{center}
+Find $f(n,n)$ for all $(n,n)$ in $\mathbb{Z} x \mathbb{Z}$.\\
+\textit{Hint: Consider the cases when n is even and when it is odd}\\
+\hfill \break
+if $n \bmod 2 = 0$, $f(n,n) = 1$,\\
+else if $n \bmod 2 = 1$, $f(n,n) = 0$
+\end{center}
+%
+%
+\subsection*{8.}
+\begin{center}
+Let $S = \{1,2,3,4,5\}$ and consider the functions $1_{s}. f. g \text{ and } h$ from $S \text{ into } S$\\
+defined by $1_{s}(n) =n,f(n) = 6 -n, g(n) = max\{3,n\}, \text{ and } h(n) = max\{1, n-1\}$
+\end{center}
+
+\subsection*{(a)}
+\begin{center}
+Write each of these functions as a set of ordered pairs, i.e., list the elements in their graphs:\\
+\hfill \break
+$1_{s}(n) = \{(1,1), (2,2), (3,3), (4,4), (5,5)\}$\\
+$f(n) = \{(1,5), (2,4), (3,3), (4,2), (5,1)\}$\\
+$g(n) = \{(1,3), (2,3), (3,3), (4,4), (5,5)\}$\\
+$h(n) = \{(1,1), (2,1), (3,2), (4,3), (5,4)\}$\\
+\end{center}
+
+\subsection*{(b)}
+\begin{center}
+Sketch a graph of each of these functions:\\
+\hfill \break
+\begin{tikzpicture}
+\datavisualization [school book axes, visualize as smooth line]
+	data {
+		x, y
+		1,1
+		2,2
+		3,3
+		4,4
+		5,5
+	};
+\end{tikzpicture}
+%
+\begin{tikzpicture}
+\datavisualization [school book axes, visualize as smooth line]
+	data {
+		x, y
+		1,5
+		2,4
+		3,3
+		4,2
+		5,1
+	};
+\end{tikzpicture}
+%
+\begin{tikzpicture}
+\datavisualization [school book axes, visualize as smooth line]
+	data {
+		x, y
+		1,3
+		2,3
+		3,3
+		4,4
+		5,5
+	};
+\end{tikzpicture}
+%
+\begin{tikzpicture}
+\datavisualization [school book axes, visualize as smooth line]
+	data {
+		x, y
+		1,1
+		2,1
+		3,2
+		4,3
+		5,4
+	};
+\end{tikzpicture}
+\end{center}
+%
+%
+\hfill \break
+\hfill \break
+\subsection*{9.}
+\begin{center}
+For $n \in \mathbb{Z}$, let $f(n) = \frac{1}{2}[(-1)^{n} + 1]$.\\
+The function $f$ is the characteristic function for some subset of $\mathbb{Z}$.\\
+Which subset?\\
+\hfill \break
+\{0,1\}, where 1 = all even integers in $\mathbb{Z}$
+\end{center}
+%
+%
+\hfill \break
+\subsection*{10.}
+\begin{center}
+Consider subsets $A \text{ and } B$ of a set $S$
+\end{center}
+
+\subsection*{(a)}
+\begin{center}
+The function $X_{A} \cdot X_{B}$ is the characteristic function of some subset of $S$.\\
+Which subset?\\
+\hfill \break
+$A \bigcap B$
+\end{center}
+
+\subsection*{(b)}
+\begin{center}
+Repeat part (a) for the function $X_{A} + X_{B} - X_{A \bigcap B}$\\
+\hfill \break
+$A \bigcup B$
+\end{center}
+
+\subsection*{(c)}
+\begin{center}
+Repeat part (a) for the function $X_{A} + X_{B} - 2 \cdot X_{A \bigcap B}$\\
+\hfill \break
+$A \backslash B \bigcup B \backslash A$
+\end{center}
+%
+%
+\subsection*{13.}
+\begin{center}
+We define functions mapping $\mathbb{R} \text{ into } \mathbb{R}$ as follows:\\
+$f(x) = x^{3} - 4x$\\
+$g(x) = \frac{1}{x^{2} + 1}$\\
+$h(x) = x^{4}$
+\end{center}
+
+\subsection*{(a)}
+\begin{center}
+Find $f \circ f$\\
+\hfill \break
+$f(x^{3} - 4x)$\\
+$= (x^{3} - 4x)^{3} - 4(x^{3} - 4x)$
+\end{center}
+
+\subsection*{(e)}
+\begin{center}
+Find $f \circ g \circ h$\\
+\hfill \break
+$f(g(h(x)))$\\
+$= f(g(x^{4}))$\\
+$= f(\frac{1}{(x^{4})^{2} + 1})$\\
+$= (\frac{1}{(x^{4})^{2} + 1})^{3} - 4(\frac{1}{(x^{4})^{2} + 1})$
+\end{center}
+
+\end{document}
