@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.5.23)  10 MAR 2018 12:59
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.5.23)  10 MAR 2018 15:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -132,14 +132,119 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
-[2] [3] (./hw2_2.aux) ) 
+[2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 251--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--260
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 305--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--317
+
+ []
+
+[5] [6] [7] (./hw2_2.aux) ) 
 Here is how much of TeX's memory you used:
- 1196 strings out of 493005
- 13877 string characters out of 6134596
+ 1202 strings out of 493005
+ 14045 string characters out of 6134596
  82890 words of memory out of 5000000
- 5196 multiletter control sequences out of 15000+600000
- 9889 words of font info for 45 fonts, out of 8000000 for 9000
+ 5198 multiletter control sequences out of 15000+600000
+ 9905 words of font info for 47 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  27i,8n,26p,216b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on hw2_2.pdf (3 pages).
+Output written on hw2_2.pdf (7 pages).
