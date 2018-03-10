@@ -1,7 +1,7 @@
    
 \documentclass[11pt]{article}
 \renewcommand{\baselinestretch}{1.05}
-\usepackage{amssymb,amsmath,amsfonts,multirow}
+\usepackage{amssymb, amsmath, amsfonts, multirow}
 \topmargin0.0cm
 \headheight0.0cm
 \headsep0.0cm
@@ -114,22 +114,131 @@ Do the same for parts (a) and (b) of Example 2:
 \end{flushleft}
 %
 %
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+%
+%
+\begin{center}
+\textbf{\textit{Note}}\\
+\textit{\hspace{0mm}Converse		: flips}\\
+\textit{\hspace{8mm}Inverse		: negates}\\
+\textit{\hspace{11mm}Contrapositive	: flips and negates}
+\end{center}
+%
+%
+\subsection*{6.}
+\begin{center}
+Give the converses of the following propositions:
+% see <http://staff.scem.uws.edu.au/cgi-bin/cgiwrap/zhuhan/dmath/dm_readall.cgi?page=5&part=2>
+\end{center}
+
+\subsection*{(b)}
+\begin{center}
+If I am smart, then I am rich.\\
+\hfill \break
+If I am rich, then I am smart.
+\end{center}
+
+\subsection*{(c)}
+\begin{center}
+If $x^{2} = x \text{, then } x = 0 \text{ or } x = 1$.\\
+\hfill \break
+If $x = 0 \text{ or } x = 1 \text{, then } x^{2} = x$.
+\end{center}
+%
+%
+\subsection*{7.}
+\begin{center}
+Give the contrapositives of the propositions in Exercise 6:
+% see <http://staff.scem.uws.edu.au/cgi-bin/cgiwrap/zhuhan/dmath/dm_readall.cgi?page=5&part=2>
+\end{center}
+
+\subsection*{(b)}
+\begin{center}
+If I am smart, then I am rich.\\
+\hfill \break
+If I am not rich, then I am not smart.
+\end{center}
+
+\subsection*{(c)}
+\begin{center}
+If $x^{2} = x \text{, then } x = 0 \text{ or } x = 1$.\\
+\hfill \break
+If $x \neq 0 \text{ or } x \neq 1 \text{, then } x^{2} \neq x$.
+\end{center}
+%
+%
 \subsection*{9.}
 
 \subsection*{(a)}
 \begin{center}
 Show that $n = 3$ provides one possible counterexample to the assertion "$n^{3} < 3^{n} \forall n \in \mathbb{N}$":\\
-
+\hfill \break
+$3^{3} = 27, 3^{3} = 27$,\\
+thus $27 \nless 27$
 \end{center}
 
 \subsection*{(b)}
 \begin{center}
 Can you find any other counterexamples?\\
+\hfill \break
+I could not find any other counterexamples within the $\mathbb{N}$ domain.
+\end{center}
+%
+%
+\subsection*{11.}
 
+\subsection*{(a)}
+\begin{center}
+Show that $x = -1$ is a counterexample to $(x+1)^{2} \geq x^{2} \forall x \in \mathbb{R}$:\\
+\hfill \break
+$(-1 + 1)^{2},  -1^{2}$\\
+$0 \ngeq 1$
 \end{center}
 
+\subsection*{(b)}
+\begin{center}
+Find another counterexample:\\
+\hfill \break
+$x = -2$\\
+$(-2 + 1)^{2},  -2^{2}$\\
+$1 \ngeq 4$
+\end{center}
 
+\subsection*{(c)}
+\begin{center}
+Can a non-negative number serve as an example?\\
+\hfill \break
+No, because $\forall x \in \mathbb{N} \text{, } x+1 > x$
+\end{center}
+%
+%
+\subsection*{12.}
+\begin{center}
+Find counterexamples to the following assertions:
+\end{center}
 
+\subsection*{(a)}
+\begin{center}
+$2^{n} - 1$ is prime for every $n \geq 2$\\
+\hfill \break
+Consider $h(n) = |\{k \in \mathbb{N} : k|n\}|$,\\
+if $h(n) = 2$, then $n$ is prime.\\
+\hfill \break
+let $n = 4$,\\
+$2^{4} - 1 = 15$,\\
+$h(15) = |1,3,5,15| = 4$,\\
+thus $n = 4$ is a counterexample.\\
+\hfill \break
+let $n = 6$,\\
+$2^{4} - 1 = 63$,\\
+$h(63) = |1,3,7,9,21,63| = 6$,\\
+thus $n = 6$ is another counterexample.
+\end{center}
+%
+%
 
 
 \end{document}

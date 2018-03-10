@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.5.23)  10 MAR 2018 07:27
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.5.23)  10 MAR 2018 08:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -127,15 +127,34 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-] [2]
-[3] (./hw2_1.aux) ) 
+]
+Underfull \hbox (badness 10000) in paragraph at lines 117--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--123
+
+ []
+
+[2] [3] [4] (./hw2_1.aux) ) 
 Here is how much of TeX's memory you used:
- 1199 strings out of 493005
- 13960 string characters out of 6134596
+ 1208 strings out of 493005
+ 14232 string characters out of 6134596
  76890 words of memory out of 5000000
- 5197 multiletter control sequences out of 15000+600000
- 9897 words of font info for 46 fonts, out of 8000000 for 9000
+ 5200 multiletter control sequences out of 15000+600000
+ 9921 words of font info for 49 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  27i,6n,26p,216b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on hw2_1.pdf (3 pages).
+Output written on hw2_1.pdf (4 pages).
