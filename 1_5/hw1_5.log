@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.5.23)  9 MAR 2018 13:39
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.5.23)  10 MAR 2018 07:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -476,17 +476,27 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 111--114
+Underfull \hbox (badness 10000) in paragraph at lines 109--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--114
+Underfull \hbox (badness 10000) in paragraph at lines 109--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--114
+Underfull \hbox (badness 10000) in paragraph at lines 109--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--114
 
  []
 
@@ -509,7 +519,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--254
 Here is how much of TeX's memory you used:
  13811 strings out of 493005
  312857 string characters out of 6134596
- 422090 words of memory out of 5000000
+ 422089 words of memory out of 5000000
  17552 multiletter control sequences out of 15000+600000
  12103 words of font info for 57 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
