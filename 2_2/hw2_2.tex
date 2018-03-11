@@ -348,64 +348,129 @@ Verify the following logical implications using truth tables
 
 \subsection*{(b)}
 \begin{center}
-Disjunctive syllogism, rule 21: $$\\
+Disjunctive syllogism, rule 21: $[(p \vee q) \wedge \neg p] \Longrightarrow q$\\
 \hfill \break
-
+\begin{tabular}{ |c|c|c|c|c|c|} 
+\hline
+$p$ & $q$ & $[(p \vee q)$ & $\wedge$ & $\neg p]$ & $\rightarrow q$\\
+\hline
+\multirow{1}{1em}
+{ 0}	&	0	&	0	&	0	&	1	&	\textbf{1}\\
+0	&	1	&	1	&	1	&	1	&	\textbf{1}\\
+1	&	0	&	1	&	0	&	0	&	\textbf{1}\\
+1	&	1	&	1	&	0	&	0	&	\textbf{1}\\
+\hline
+\end{tabular}
 \end{center}
 %
 %
 \subsection*{22.}
 \begin{center}
-
+Prove or disprove the following. Don't forget that only \textit{one} line of the truth table is needed to show that a proposition is \textit{not} a tautology.
 \end{center}
 
 \subsection*{(a)}
 \begin{center}
-
+$(q \rightarrow p) \Longleftrightarrow (p \wedge q)$\\
 \hfill \break
-
+The following disproves that this is a tautology:\\
+\hfill \break
+\begin{tabular}{ |c|c|c|c|} 
+\hline
+$p$ & $q$ & $(q \rightarrow p)$ & $(p \wedge q)$\\
+\hline
+\multirow{1}{1em}
+{ 0}	&	1	&	0	&	0\\
+\hline
+\end{tabular}
 \end{center}
 %
 %
+\hfill \break
 \subsection*{23.}
 \begin{center}
-
+A logician told her son "If you don't finish your dinner, you will not get to stay up and watch TV."\\
+He finished his dinner and then went straight to bed. Discuss:\\
 \hfill \break
-
+The logician's compound proposition spoke nothing of what happens if the son finishes his dinner, thus the son simply went to bed.\\
+$p$ = finish dinner\\
+$q$ = stay up\\
+$r$ = watch tv\\
+Logician's compound proposition: $\neg p \rightarrow \neg (q \wedge r)$\\
+\hfill \break
+As shown in this truth table, even when the son finished his dinner $(p = 1)$, the logical implication is no staying up and no TV! The son got the short end of the stick when it came to vacuous truths. This just goes to show that he should have simply not finished dinner \textit{and} stayed up late to watch TV; that would have been logically sound [GoTo row4].\\
+\hfill \break
+\begin{tabular}{ |c|c|c|c|c|c|c|} 
+\hline
+$p$ & $q$ & $r$ & $\neg p$ & $\rightarrow$ & $\neg$ & $(q \wedge r)$\\
+\hline
+\multirow{1}{1em}
+{ 0}	&	0	&	0	&	1	&	\textbf{1}	&	1	&	0\\
+0	&	0	&	1	&	1	&	\textbf{1}	&	1	&	0\\
+0	&	1	&	0	&	1	&	\textbf{1}	&	1	&	0\\
+\textit{0}	&	\textit{1}	&	\textit{1}	&	1	&	\textbf{0}	&	0	&	1\\
+1	&	0	&	0	&	0	&	\textbf{1}	&	1	&	0\\
+1	&	0	&	1	&	0	&	\textbf{1}	&	1	&	0\\
+1	&	1	&	0	&	0	&	\textbf{1}	&	1	&	0\\
+1	&	1	&	1	&	0	&	\textbf{1}	&	0	&	1\\
+\hline
+\end{tabular}
 \end{center}
 %
 %
 \subsection*{24.}
 \begin{center}
-
+Consider the statement "Concrete does not grow if you do not water it."\\
+\hfill \break
+Let $p$ = you water it\\
+Let $q$ = concrete grows\\
+\hfill \break
+\begin{tabular}{ |c|c|c|} 
+\hline
+$\neg p$ & $\neg q$ & $\neg p \rightarrow \neg q$\\
+\hline
+\multirow{1}{1em}
+{ 0}	&	0	&	\textbf{1}\\
+0	&	1	&	\textbf{1}\\
+1	&	0	&	\textbf{0}\\
+1	&	1	&	\textbf{1}\\
+\hline
+\end{tabular}
 \end{center}
 
 \subsection*{(a)}
 \begin{center}
-
+Give the contrapositive:\\
 \hfill \break
-
+If concrete grows, then you water it.\\
 \end{center}
 
 \subsection*{(b)}
 \begin{center}
-
+Give the converse:\\
 \hfill \break
-
+If concrete does not grow, then you do not water it.
 \end{center}
 
 \subsection*{(c)}
 \begin{center}
-
+Give the converse of the contrapositive:\\
 \hfill \break
-
+If you water it, then concrete grows.
 \end{center}
 
 \subsection*{(d)}
 \begin{center}
-
+Which among the original statement and the ones in parts (a), (b), and (c) are true?\\
 \hfill \break
-
+\textit{I'm not a construction worker so I cannot vouch for the validity of any of these statements, haha}\\
+\hfill \break
+Original - True\\
+(a) - False\\
+(b) - True\\
+(c) - False\\
+\hfill \break
+\textit{Really... who knows?...}
 \end{center}
 
 \end{document}
