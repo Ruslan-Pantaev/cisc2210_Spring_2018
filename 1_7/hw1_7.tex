@@ -144,13 +144,59 @@ $g(n)$
 %
 \subsection*{5.}
 \begin{center}
-
+Here are two "shift functions" mapping $\mathbb{N} \text{ into } \mathbb{N}$:\\
+$f(n) = n + 1$ and $g(n) = \text{max}[0,n - 1] \text{ for } n \in \mathbb{N}$
 \end{center}
 
 \subsection*{(a)}
 \begin{center}
-
+Calculate $f(n)$ for $n = 0,1,2,3,4,73$:\\
 \hfill \break
+$f(0) = 1$\\
+$f(1) = 2$\\
+$f(2) = 3$\\
+$f(3) = 4$\\
+$f(4) = 5$\\
+$f(73) = 74$
+\end{center}
+
+\subsection*{(b)}
+\begin{center}
+Calculate $g(n)$ for $n = 0,1,2,3,4,73$:\\
+\hfill \break
+$g(0) = 0$\\
+$g(1) = 0$\\
+$g(2) = 1$\\
+$g(3) = 2$\\
+$g(4) = 3$\\
+$g(73) = 72$\\
+\end{center}
+
+\subsection*{(c)}
+\begin{center}
+Show that $f$ is one-to-one but does not map $\mathbb{N} \text{ onto } \mathbb{N}$:\\
+\hfill \break
+$f(n)$ always produces a unique output in codomain so it is one-to-one, but does not plot $0$ onto the codomain
+\end{center}
+
+\subsection*{(d)}
+\begin{center}
+Show that $g$ maps $\mathbb{N} \text{ onto } \mathbb{N}$ but is not one-to-one:\\
+\hfill \break
+$g(n)$ maps all numbers onto $\mathbb{N}$ codomain but is not one-to-one because $g(0) \text{ and } g(1)$ both output $0$
+\end{center}
+
+\subsection*{(e)}
+\begin{center}
+Show that $g \circ f(n) = n \text{ for all } n$, but that $f \circ g(n) = n \text{ does not hold for all } n$:\\
+\hfill \break
+$g \circ f(n)$ is essentially just $\text{max}[0,n]$, so it will output back $n$\\
+$f \circ g(n)$ does not account for $0$
+\end{center}
+%
+%
+\subsection*{7.}
+\begin{center}
 
 \end{center}
 
@@ -167,15 +213,14 @@ $g(n)$
 \hfill \break
 
 \end{center}
-
-\subsection*{(d)}
+%
+%
+\subsection*{9.}
 \begin{center}
-
-\hfill \break
 
 \end{center}
 
-\subsection*{(e)}
+\subsection*{(a)}
 \begin{center}
 
 \hfill \break
@@ -183,7 +228,24 @@ $g(n)$
 \end{center}
 %
 %
+\subsection*{10.}
+\begin{center}
 
+\hfill \break
 
+\end{center}
+%
+%
+\subsection*{11.}
+\begin{center}
+
+\end{center}
+
+\subsection*{(a)}
+\begin{center}
+
+\hfill \break
+
+\end{center}
 
 \end{document}
