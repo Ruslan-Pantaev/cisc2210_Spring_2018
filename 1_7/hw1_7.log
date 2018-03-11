@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.5.23)  11 MAR 2018 13:21
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.5.23)  11 MAR 2018 14:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -162,11 +162,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
-[2] [3] (./hw1_7.aux) ) 
+[2] [3] (./hw1_7.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  1602 strings out of 493005
  19380 string characters out of 6134596
- 82644 words of memory out of 5000000
+ 83644 words of memory out of 5000000
  5574 multiletter control sequences out of 15000+600000
  9905 words of font info for 47 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
